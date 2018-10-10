@@ -1,0 +1,60 @@
+.user-settings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c0c5ce;
+    flex-wrap: wrap;
+}
+
+.user-settings-Link{
+    color: #343d46;
+}
+
+.settings-item {
+    cursor: pointer;
+    padding: .3rem .8rem;
+    color: #343d46;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 .3rem;
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.with-icon-text{
+    padding: 0;
+    margin: 0;
+}
+
+.settings-item:hover{
+    background-color: #343d46;
+    color: #c0c5ce;
+    transition-duration: 250ms;
+}
+
+.settings-item-name{
+    font-size: 1.2rem;
+    font-weight: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #c0c5ce;
+    color: #343d46;
+    transition: all .1s;
+    cursor: pointer;
+    padding: .1rem .2rem;
+    outline:none;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 500px){
+    .settings-item {
+        font-size: 2rem;
+    }
+    .settings-item-name {
+        font-size: 1.5rem;
+        padding: .2rem .5rem;
+    }
+}

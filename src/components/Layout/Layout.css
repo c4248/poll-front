@@ -1,0 +1,41 @@
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+@font-face{
+    font-family: brGrotesque;
+    src: url('../../fonts/brandon.otf')
+}
+
+.title-text {
+    padding: 0;
+    padding-left: 5px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: brGrotesque;
+}
+
+.auth-buttons{
+    display: flex;
+    align-items: flex-end;
+}
+
+.title{
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 700px){
+    .title{
+        display: none;
+    }
+
+    .auth-buttons{
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+.error{
+    color: #ff6666;
+    min-height: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    flex: 1;
+    padding: 0 .5rem;
+}
+
+.login-button--nav{
+    font-size: 1.5rem;
+    font-weight: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #c0c5ce;
+    color: #343d46;
+    transition: all .1s;
+    cursor: pointer;
+    margin: 0 .4rem;
+    padding: .5rem 1rem;
+    outline:none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 700px){
+    .login-button--nav{
+        font-size: 1.3rem;
+    }
+}
+
+.login-button--nav:hover{
+    background-color: #343d46;
+    color: #c0c5ce;
+}
+
+.top-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exit-login-button{
+    backface-visibility: hidden;
+    background-color: transparent;
+    margin-left: .5rem;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: .5rem;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s;
+    height: 2rem;
+    color: #c0c5ce;
+}
+.exit-login-button:hover{
+    transform: rotate(90deg) scale(1.2);
+}
+
+/* @media screen and (max-width: 700px){
+    .mobile_modal{
+        top: 50%;
+        left: 50%;
+    }
+} */
+
+.modal{
+    top                   : 50%;
+      left                  : 50%;
+      right                 : auto;
+      bottom                : auto;
+      margin-right           : -50%;
+      transform :translate(-50%, -50%);
+      background-color: #c0c5ce;
+      border: 2px solid black;
+      width: 500px;
+}

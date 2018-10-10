@@ -1,0 +1,173 @@
+
+.listName{
+    padding: 0 1rem;
+    margin-top: 1rem;
+    border-bottom: 3px solid #343d46; 
+    color: #343d46;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    max-width: 1168px;
+    margin: 1rem auto 0 auto;
+}
+
+@media screen and (max-width: 700px){
+    .listName{
+        flex-direction: column;
+        padding-bottom: 1rem;
+        align-items:stretch;
+    }
+}
+
+
+.router-link{
+    text-decoration: none;
+}
+
+.listName:hover{
+    background-color: #a9b0bc;
+    transition-duration: 150ms;
+}
+
+.view-results-button{
+    background-color: #c0c5ce;
+    color: #343d46;
+    border: 2px solid #343d46;
+    height: 52px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    min-width: 170px;
+    font-weight: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.view-results-button:hover {
+    background-color: #343d46;
+    color: #ffb366;
+    transition-duration: 250ms;
+}
+
+.collapsed {
+    background-color: #343d46;
+    color: #c0c5ce;
+    padding: 0 2rem;
+    margin: 0 .3rem;
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 700px){
+    .collapsed{
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+}
+
+.poll_button_description{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.choices{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.vote_radio{
+    display: flex;
+    margin-bottom: 1rem;
+    padding-left: 1.7rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+    user-select: none;
+}
+
+.vote_radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.4rem;
+    width: 1.4rem;
+    background-color: #c0c5ce;
+    border-radius: 50%;
+}
+
+.vote_radio:hover input ~ .checkmark{
+    background-color: #a7adba;
+}
+
+.vote_radio input:checked ~ .checkmark {
+    background-color: #c0c5ce;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.vote_radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.vote_radio .checkmark:after {
+    top: .35rem;
+   left: .34rem;
+   width: .7rem;
+   height: .7rem;
+   border-radius: 50%;
+   background: #343d46;
+}
+form{
+    margin: 1.3rem 0;
+}
+
+.vote_submit_button {
+    background-color: #343d46;
+    width: 70px;
+    height: 40px;
+    border: 2px solid #c0c5ce;
+    border-radius: 4px;
+    color: #c0c5ce;
+    cursor: pointer;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.vote_submit_button:hover {
+    background-color: #c0c5ce;
+    color: #343d46;
+    transition-duration: 250ms;
+}
+
+.poll_message{
+    font-size: 1.2rem;
+}
+
+.pollbutton-error{
+    padding: .4rem;
+    background-color: #46343d;
+    border: 2px solid #c0c5ce;
+    border-radius: 4px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.3rem;
+}

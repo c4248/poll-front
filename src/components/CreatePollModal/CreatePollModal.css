@@ -1,0 +1,174 @@
+.question_input{
+    width: 99%;
+    border: 2px solid transparent;
+    outline: none;
+    margin-bottom: .8rem;
+    margin-top: .7rem;
+    font-size: 2rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #343d46;
+    padding-left: 1%;
+    color: #ffb366;
+    transition: all .15s;
+}
+
+.question_input:focus{
+    transition: all .25s;
+    background-color: #a7adba;
+    border: 2px solid black;
+}
+
+.create_poll_title{
+    font-size: 30px;
+    font-weight: bold;
+    color:#ffb366;
+}
+
+@media screen and (min-width: 500px){
+    .create_poll_title{
+        min-width: 430px;
+    }
+}
+
+.next_button{
+    background: #343d46;
+    color: #ffb366;
+    border:none;
+    padding: 0 3rem;
+    width: 40%;
+    font-size:3rem;
+    cursor: pointer;
+    outline: none;
+    transition-duration: 150ms;
+    backface-visibility: hidden;
+}
+
+.next_button:hover{
+    transform: scale(1.2);
+    
+}
+
+.next-prev-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.choice_input_add {
+    display: flex;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+
+.choice_add_button {
+    background-color: #c0c5ce;
+    font-size: 1.5rem;
+    padding: .3rem 1rem;
+    border: 2px solid #343d46;
+    cursor: pointer;
+    outline: none;
+}
+
+.choice_add_button:hover {
+    background-color: #a7adba;
+    transition-duration: 250ms;
+}
+
+.chart_choices{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.chart_choice {
+    color:#ffb366;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    font-size: 2.5rem;
+
+}
+
+
+.chart_choice:hover {
+    background-color: #343d46;
+    color: #c0c5ce;
+    transition-duration: 250ms;
+}
+
+.chart_choice_selected {
+    font-size: 2.5rem;
+    background-color: #c0c5ce;
+    color:#343d46;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+
+}
+
+@media screen and (max-width: 700px){
+    .chart_choice{
+        padding: 1rem 1rem;
+    }
+    .chart_choice_selected{
+      padding: 1rem 1rem;
+    }
+}
+
+
+.finish_form{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c0c5ce;
+}
+
+.li_choice{
+    /* margin: .3rem 0; */
+    padding-left: 1rem;
+    font-size: 1.45rem;
+    background-color: #343d46;
+    color: #ffb366;
+
+    animation-name: moveTop;
+    animation-duration: 150ms;
+    animation-timing-function: ease-out
+
+
+}
+
+.li_choice:hover {
+    color: #ff8080;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+
+@keyframes moveTop{
+    0% { 
+        transform: translateY(60px);
+
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.finished-icon{
+    color: #c0c5ce;
+    font-size: 3rem;
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.icon-size{
+    font-size: 5rem;
+    padding-right: 1rem;
+}
+
+.finished-icon:hover{
+    color: #ffb366;
+    transition-duration: 150ms;
+}

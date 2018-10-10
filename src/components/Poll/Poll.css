@@ -1,0 +1,10 @@
+.bar_chart_container{
+    display: flex;
+    justify-content: space-around;
+    overflow: visible;
+}
+
+.poll_vote_contain{
+    max-width: 900px;
+    margin: 0 auto;
+}
