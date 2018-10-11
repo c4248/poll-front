@@ -1,0 +1,23 @@
+.poll_list_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.delete_butt{
+    padding: .3rem .6rem;
+    background-color: #ff4d4d;
+    color: #343d46;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.settings_poll_list {
+    margin-left: 1rem;
+}
+
+.password_form {
+    display: flex;
+    flex-direction: column;
+}

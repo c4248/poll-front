@@ -12,9 +12,10 @@ export const pollDelete = (postId) => {
     }
 }
 
-export const passChange = (password) => {
+export const passChange = (username, password) => {
     return {
         type: 'P_UPDATE',
+        username,
         password
     }
 }

@@ -8,15 +8,30 @@ export function* userDeleteSaga(action){
 }
 
 export function* pollDeleteSaga(action){
-    
+    try {
+        const deletion = yield axios.delete(`/poll/${action.postId}`)
+        yield(getUserDataSaga())
+    }catch(error){
+        console.log(error)
+    }
 }
 
 export function* passChangeSaga(action){
+    console.log(action)
+    const data = {
+        username: action.username,
+        password: action.password
+    }
+    try{
+        const update = yield axios.put(`/user/1`, data)
+        console.log(update)
+    }catch(error){
+        console.log(error)
+    }
     
 }
 
 export function* getUserDataSaga(action){
-    console.log('wtf')
     let user_id = localStorage.getItem('user_id')
     try{
         const responseUser = yield axios.get(`/user/${user_id}`)

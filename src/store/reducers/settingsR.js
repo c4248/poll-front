@@ -6,8 +6,8 @@ const initialState ={
 const reducer = (state=initialState,action)=>{
     switch(action.type){
         case 'SET_USER_DATA': return ({userData: action})
-        case 'POLL_DELETE': return 
-        case 'P_UPDATE' : return
+        case 'POLL_DELETE': return state
+        case 'P_UPDATE' : return state
         default: return state
     }
 }
